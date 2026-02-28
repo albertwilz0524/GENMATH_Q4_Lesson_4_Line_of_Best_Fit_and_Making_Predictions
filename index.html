@@ -367,7 +367,40 @@
         </div>
     </div>
 
-    <!-- Slide 6: Drawing the Line -->
+    
+    <!-- Slide 6: Try This! Calculate -->
+    <div class="slide">
+        <h2>Try This! Calculate the Equation</h2>
+        <p>Given the following summary statistics for a dataset, find the equation of the least-squares line of best fit (round to four decimal places):</p>
+        
+        <div class="stats-grid">
+            <div class="stat-item">$\bar{x} = 11.38$</div>
+            <div class="stat-item">$s_x = 1.87$</div>
+            <div class="stat-item">$\bar{y} = 230.7$</div>
+            <div class="stat-item">$s_y = 97.87$</div>
+            <div class="stat-item">$r = 0.94$</div>
+        </div>
+
+        <div class="interactive-box">
+            <button class="btn-toggle" onclick="toggleSolution('sol-1')">Reveal Solution</button>
+            <div id="sol-1" class="hidden-content">
+                <p><strong>Step 1: Calculate $m$</strong></p>
+                $$ m = r \frac{s_y}{s_x} = 0.94 \times \frac{97.87}{1.87} $$
+                $$ m = 0.94 \times 52.3369 \approx 49.1967 $$
+                
+                <p style="margin-top: 15px;"><strong>Step 2: Calculate $c$</strong></p>
+                $$ c = \bar{y} - m\bar{x} = 230.7 - (49.1967 \times 11.38) $$
+                $$ c = 230.7 - 559.8584 = -329.1584 $$
+                
+                <p style="margin-top: 15px;"><strong>Final Equation:</strong></p>
+                <div class="math-container" style="background: white;">
+                    $$ y = 49.1967x - 329.1584 $$
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Drawing the Line -->
     <div class="slide">
         <h2>Guided Example: Drawing the Line</h2>
         <p>How do we draw $y = 0.7512x - 65.6286$ on a scatterplot? Pick two $x$ values, find their $y$ values, plot the points, and connect them.</p>
@@ -418,37 +451,6 @@
         </div>
     </div>
 
-    <!-- Slide 7: Try This! Calculate -->
-    <div class="slide">
-        <h2>Try This! Calculate the Equation</h2>
-        <p>Given the following summary statistics for a dataset, find the equation of the least-squares line of best fit (round to four decimal places):</p>
-        
-        <div class="stats-grid">
-            <div class="stat-item">$\bar{x} = 11.38$</div>
-            <div class="stat-item">$s_x = 1.87$</div>
-            <div class="stat-item">$\bar{y} = 230.7$</div>
-            <div class="stat-item">$s_y = 97.87$</div>
-            <div class="stat-item">$r = 0.94$</div>
-        </div>
-
-        <div class="interactive-box">
-            <button class="btn-toggle" onclick="toggleSolution('sol-1')">Reveal Solution</button>
-            <div id="sol-1" class="hidden-content">
-                <p><strong>Step 1: Calculate $m$</strong></p>
-                $$ m = r \frac{s_y}{s_x} = 0.94 \times \frac{97.87}{1.87} $$
-                $$ m = 0.94 \times 52.3369 \approx 49.1967 $$
-                
-                <p style="margin-top: 15px;"><strong>Step 2: Calculate $c$</strong></p>
-                $$ c = \bar{y} - m\bar{x} = 230.7 - (49.1967 \times 11.38) $$
-                $$ c = 230.7 - 559.8584 = -329.1584 $$
-                
-                <p style="margin-top: 15px;"><strong>Final Equation:</strong></p>
-                <div class="math-container" style="background: white;">
-                    $$ y = 49.1967x - 329.1584 $$
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Slide 8: Making Predictions -->
     <div class="slide">
