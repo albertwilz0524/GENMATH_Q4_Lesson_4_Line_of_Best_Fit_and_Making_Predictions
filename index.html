@@ -708,7 +708,7 @@
                 <li>Predict the weight for a person who is $155\text{ cm}$ tall and $180\text{ cm}$ tall. State if interpolation or extrapolation.</li>
             </ol>
             
-            <button class="btn-toggle" onclick="checkPasswordAndToggle('skill-build-sol')">Reveal Step-by-Step Solution</button>
+            <button class="btn-toggle" onclick="toggleSolution('skill-build-sol')">Reveal Step-by-Step Solution</button>
             
             <div id="skill-build-sol" class="hidden-content" style="font-size: 1.1rem;">
                 <p><strong>1 & 5. Scatter Plot & Plotted Line</strong></p>
@@ -878,6 +878,7 @@
             if (!chartsInitialized[id]) {
                 if (id === 'comp-ex-sol') initChart11();
                 if (id === 'comp-try-sol') initChart12();
+                if (id === 'skill-build-sol') initChartSkill();
                 chartsInitialized[id] = true;
             }
         }
